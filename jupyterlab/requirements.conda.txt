@@ -1,0 +1,8 @@
+python==3.7
+pandas
+matplotlib
+spacy
+tqdm
+keras
+pymongo
+jupyterlab

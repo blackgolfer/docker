@@ -1,0 +1,5 @@
+graphviz
+nltk
+scikit-learn
+allennlp
+mlxtend
