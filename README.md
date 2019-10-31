@@ -1,8 +1,17 @@
 # docker
-## Jupyterlab
+--------
+
+[docker-project-example-1]: https://github.com/archlinux/archlinux-docker "Docker Base Image for Arch Linux"
+
+## 项目管理
+   1. 各项目中的Makefile文件参考《[Docker Base Image for Arch Linux][docker-project-example-1]》
+
+产生docker镜像：
 ```shell
-cd jupyterlab
-docker build --tag="jupyterlab-anaconda3:latest" -f Dockerfile .
-docker image prune
-docker run -v $PWD/app:/app -it -p 8888:8888 blackgolfer/jupyterlab-anaconda3
+make docker-image
+```
+
+发布docker镜像：
+```shell
+make docker-push
 ```

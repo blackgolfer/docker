@@ -1,0 +1,293 @@
+/*
+   pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 70%;
+        line-height: 120%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 70%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+
+    pre > code[class*="cm-s-jupyter language-"]::before {
+      content: attr(class);
+      display: block;
+      font-size: small;
+      font-style: italic;
+      color: #6c5f7c;
+      margin: -.4rem 0 .6rem -1.2rem
+    }
+
+*/
+    .cm-s-jupyter {
+        margin-bottom: 1.125rem;
+        position: relative;
+    }
+
+    code.cm-s-jupyter {
+        line-height: 1.5em;
+        background-color: #f6f6f6;
+        padding: 1em;
+        margin-bottom: 1.125rem;
+        border-radius: 3px;
+        font-size: 80%;
+        display: block;
+        overflow-x: scroll;
+    }
+
+    pre code.cm-s-jupyter.language-shell::before {
+        content: "Shell";
+        background-color: #f3e2bb;
+        color: #c09022;
+        margin: -0.6rem 0 .6rem -0.0rem;
+        padding: 0;
+        border: 0;
+        font-size: small;
+        font-style: italic;
+    }
+
+    pre code.cm-s-jupyter.language-python::before {
+        content: "Python";
+        background-color: #d8e3eb;
+        color: #5482a3;
+        margin: -0.6rem 0 .6rem -0.0rem;
+        padding: 0;
+        border: 0;
+        font-size: small;
+        font-style: italic;
+    }
+
+
+    .cm-s-jupyter::before {
+        font-size: small;
+        color: #fff;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #999;
+        padding: 0;
+        margin: 0;
+        text-indent: 1em;
+        background: #ccc;
+        padding: 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .highlight .go {
+        color: #6c757d;
+        font-style: normal;
+    }
+
+    .highlight {
+        margin-bottom: 1.125rem;
+        position: relative;
+    }
+    
+    .highlight.sh::before {
+        content: "Shell";
+        background-color: #f3e2bb;
+        color: #c09022;
+    }
+
+    .highlight.python::before {
+        content: "Python";
+        background-color: #d8e3eb;
+        color: #5482a3;
+    }
+        
+    .highlight::before {
+        font-size: 1rem;
+        color: #fff;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #999;
+        padding: 0;
+        text-indent: 1em;
+        background: #ccc;
+        padding: 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .highlight .gp {
+        color: #8f5902;
+    }
+    
+    .highlight pre, pre {
+        line-height: 1.5em;
+        background-color: #f6f6f6;
+        padding: 1em;
+        margin-bottom: 1.125rem;
+        border-radius: 3px;
+        font-size: 80%;
+        display: block;
+        overflow-x: scroll;
+    }
+
+    .highlight .repl-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        font-size: .875rem;
+        padding-left: .6rem;
+        padding-right: .6rem;
+        padding-top: .1rem;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #5482a3;
+    }
+
+    .python pre {
+        border-radius: 0;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .sh pre {
+        border-radius: 0;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    body {
+        counter-reset: h1
+    }
+
+    h1 {
+        counter-reset: h2
+    }
+
+    h2 {
+        counter-reset: h3
+    }
+
+    h3 {
+        counter-reset: h4
+    }
+
+    h1:before {
+        counter-increment: h1;
+        /*
+        content: counter(h1) ". "
+        */
+    }
+
+/*
+    h2:before {
+        counter-increment: h2;
+        content: counter(h1) "." counter(h2) ". "
+    }
+
+    h3:before {
+        counter-increment: h3;
+        content: counter(h1) "." counter(h2) "." counter(h3) ". "
+    }
+
+    h4:before {
+        counter-increment: h4;
+        content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "
+    }
+*/
+
+    h2:before {
+        counter-increment: h2;
+        content: counter(h2) ". "
+    }
+
+    h3:before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) ". "
+    }
+
+    h4:before {
+        counter-increment: h4;
+        content: counter(h2) "." counter(h3) "." counter(h4) ". "
+    }
+
+table.reference th {
+    color: #fff;
+    background-color: #555;
+    border: 1px solid #555;
+    font-size: 12px;
+    padding: 3px;
+    vertical-align: top;
+    text-align: left;
+}
+
+table.reference tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table.reference tr:nth-child(odd) {
+    background-color: #f6f4f0;
+}
+
+table.reference, table.tecspec {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+table.reference td {
+    line-height: 2em;
+    min-width: 24px;
+    border: 1px solid #d4d4d4;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    vertical-align: top;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr td:first-child {
+    min-width: 25px;
+}

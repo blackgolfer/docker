@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM continuumio/miniconda3
 
 RUN mkdir /app
 
@@ -8,7 +8,8 @@ ADD . /app
 
 RUN apt-get -y update && apt-get -y install build-essential git-core
 
-RUN conda install -c conda-forge --file=requirements.conda.txt
+RUN conda config --add channels conda-forge
+RUN conda install -y --file requirements.conda.txt
 RUN pip install -r requirements.pip.txt
 
 RUN mv /app/.jupyter /root/.jupyter
@@ -24,4 +25,4 @@ ENV IPYTHONDIR="/app/.ipython"
 ENV PYTHONUNBUFFERED=TRUE
 
 EXPOSE 8888:8888
-CMD ["jupyter", "lab"]
+ENTRYPOINT [ "jupyterlab", "lab", "--allow-root", "--ip=0.0.0.0", "--no-browser", "--port=8888", "--notebook-dir=/app"]
