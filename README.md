@@ -25,7 +25,21 @@ make docker-push
 
 ## compose设置共享
 [docker-compose-sharing-1]: https://docs.docker.com/compose/extends/ "Share Compose configurations between files and projects"
+[docker-compose-sharing-2]: https://stackoverflow.com/questions/45915182/docker-compose-sharing-container-between-multiple-projects-by-using-the-same-co "docker-compose: Sharing container between multiple projects by using the same container_name"
+[docker-compose-sharing-3]: https://www.chrisblunt.com/rails-on-docker-share-containers-across-multiple-projects/ "Rails on Docker: How to Share Containers Across Multiple Projects"
+
+
+*参考资料*：
+- [Share Compose configurations between files and projects][docker-compose-sharing-1]
+- [docker-compose: Sharing container between multiple projects by using the same container_name][docker-compose-sharing-2]
+- [Rails on Docker: How to Share Containers Across Multiple Projects][docker-compose-sharing-3]
 
 ### 多个compose文件
 ### 服务扩展
 ### 设置的增加与覆盖
+
+## Kubernetes
+[kubernetes-containers-1]: https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/ "Communicate Between Containers in the Same Pod Using a Shared Volume"
+
+*参考资料*：
+- [Communicate Between Containers in the Same Pod Using a Shared Volume][kubernetes-containers-1]
