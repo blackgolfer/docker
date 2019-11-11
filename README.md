@@ -39,7 +39,9 @@ make docker-push
 ### 设置的增加与覆盖
 
 ## Kubernetes
+[kubernetes-archlinux-doc]: https://wiki.archlinux.org/index.php/Kubernetes "Archlinux wiwi: Kubernetes"
 [kubernetes-containers-1]: https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/ "Communicate Between Containers in the Same Pod Using a Shared Volume"
 
 *参考资料*：
+- [Archlinux wiki: Kubernetes][kubernetes-archlinux-doc]
 - [Communicate Between Containers in the Same Pod Using a Shared Volume][kubernetes-containers-1]
