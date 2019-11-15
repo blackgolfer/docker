@@ -1,5 +1,4 @@
 # docker
---------
 
 [docker-project-example-1]: https://github.com/archlinux/archlinux-docker "Docker Base Image for Arch Linux"
 [bash-script-tutorial-1]: https://linuxconfig.org/bash-scripting-tutorial-for-beginners "Bash Scripting Tutorial for Beginners"
@@ -7,7 +6,9 @@
 
 ## 项目管理
    1. 各项目中的Makefile文件参考《[Docker Base Image for Arch Linux][docker-project-example-1]》
-   2. bash脚本参考资料：[Bash Scripting Tutorial for Beginners][bash-script-tutorial-1], [How to Pass Arguments to a Bash Script][bash-script-tutorial-2]
+   2. bash脚本参考资料：
+      - [Bash Scripting Tutorial for Beginners][bash-script-tutorial-1]
+      - [How to Pass Arguments to a Bash Script][bash-script-tutorial-2]
 
 产生docker镜像：
 ```shell
@@ -27,12 +28,13 @@ make docker-push
 [docker-compose-sharing-1]: https://docs.docker.com/compose/extends/ "Share Compose configurations between files and projects"
 [docker-compose-sharing-2]: https://stackoverflow.com/questions/45915182/docker-compose-sharing-container-between-multiple-projects-by-using-the-same-co "docker-compose: Sharing container between multiple projects by using the same container_name"
 [docker-compose-sharing-3]: https://www.chrisblunt.com/rails-on-docker-share-containers-across-multiple-projects/ "Rails on Docker: How to Share Containers Across Multiple Projects"
-
+[docker-compose-sharing-4]: https://docker-curriculum.com/#multi-container-environments "Multi-container Environments"
 
 *参考资料*：
 - [Share Compose configurations between files and projects][docker-compose-sharing-1]
 - [docker-compose: Sharing container between multiple projects by using the same container_name][docker-compose-sharing-2]
 - [Rails on Docker: How to Share Containers Across Multiple Projects][docker-compose-sharing-3]
+- [Multi-container Environments][docker-compose-sharing-4]
 
 ### 多个compose文件
 ### 服务扩展

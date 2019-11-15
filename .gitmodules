@@ -1,3 +1,6 @@
 [submodule "linux/pacman/manjaro/iso-profiles"]
 	path = linux/pacman/manjaro/iso-profiles
 	url = https://gitlab.manjaro.org/profiles-and-settings/iso-profiles.git
+[submodule "web/flask/docker-curriculum"]
+	path = web/flask/docker-curriculum
+	url = https://github.com/prakhar1989/docker-curriculum.git
