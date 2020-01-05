@@ -1,0 +1,7 @@
+FROM blackgolfer/kungfu-dev
+
+RUN mkdir /opt/taurusai
+RUN git clone https://github.com/taurusai/kungfu /opt/taurusai/kungfu
+RUN yum -y update
+RUN cd /opt/taurusai/kungfu
+RUN yarn

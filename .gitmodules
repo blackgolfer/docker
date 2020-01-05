@@ -4,3 +4,6 @@
 [submodule "web/flask/docker-curriculum"]
 	path = web/flask/docker-curriculum
 	url = https://github.com/prakhar1989/docker-curriculum.git
+[submodule "db/phpMyAdmin"]
+	path = db/phpMyAdmin
+	url = https://github.com/phpmyadmin/docker.git
